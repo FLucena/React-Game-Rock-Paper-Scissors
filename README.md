@@ -1,4 +1,4 @@
-    <h1 align="center">
+<h1 align="center">
     Codo a Codo - Rock Paper Scissors Game - React Project [2023]
 </h1>
 
