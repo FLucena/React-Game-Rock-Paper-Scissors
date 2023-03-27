@@ -11,20 +11,15 @@
     <a href="#----key-features">Key Features</a> •
     <a href="#----installation">Installation</a> •
     <a href="#----available-scripts">Available Scripts</a> •
-    <a href="#----related">Related</a> •
     <a href="#----license">License</a> •
     <a href="#----acknowledgments">Acknowledgments</a> •
     <a href="#----contact">Contact</a>
 </p>
 
 <p align="center">
-    <a href="https:///" target="_blank">
+    <a href="https://react-game-rock-paper-scissors.vercel.app/" target="_blank">
         <img src="" width="800">
     </a>
-</p>
-
-<p align="center">
-    <strong>(click on image to get a live test or watch a <a href="https://www.youtube.com/" target="_blank">video preview</a>)</strong>
 </p>
 
 <h2>
@@ -65,17 +60,6 @@
     <ul>
         <li>
             <code>npm run dev</code>: Runs the app in the development mode. Open <a href="http://localhost:5173" target="_blank">http://localhost:5173</a> to view it in your browser. The page will reload when you make changes. You may also see any lint errors in the console.
-        </li>
-    </ul>
-</p>
-
-<h2>
-    Related
-</h2>
-<p>
-    <ul>    
-        <li>
-            <a href="https://github.com/FLucena/React-Game-Rock-Paper-Scissors" target="_blank">Repository of React course</a>
         </li>
     </ul>
 </p>
