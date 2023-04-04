@@ -15,7 +15,6 @@ const Opts = styled.div`
   flex-wrap: wrap;
 `;
 
-
 const Options = ({ ...props }) => {
 	return (
 		<>
@@ -46,7 +45,7 @@ const Options = ({ ...props }) => {
 						{TEXTS.form.options.scissors.text}
 					</Option>
 				</Opts>
-				{props.playerOpt !== 'null' ? <RestartBtn setPlayerOpt={props.setPlayerOpt} /> : null}
+				{props.playerOpt !== 'null' ? <RestartBtn setPlayerOpt={props.setPlayerOpt} />  : null}
 			</form>
 		</>
 	)

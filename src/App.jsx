@@ -8,7 +8,6 @@ import Instructions from './components/Instructions.jsx'
 import Footer from './components/Footer.jsx'
 
 const options = [TEXTS.form.options.rock.value, TEXTS.form.options.paper.value, TEXTS.form.options.scissors.value]
-
 function App() {
 	const [playerOpt, setPlayerOpt] = useState('null')
 	const machineOpt = playerOpt !== 'null' ? getRndElement(options) : null
@@ -29,5 +28,4 @@ function App() {
 		</>
 	)
 }
-
 export default App

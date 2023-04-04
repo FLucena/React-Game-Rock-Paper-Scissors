@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import robot from '../static/robot.png'
 import styled, { keyframes } from 'styled-components';
 
@@ -65,6 +65,7 @@ const Option = ({ children, playerOpt, machineOpt, setPlayerOpt, value, image, i
 	const handleOnChange = ({ target }) => {
 		setPlayerOpt(target.value);
 	}
+	const imgRef = useRef(null);
 
 	return (
 		<label className={'option' + (shouldDisabled ? ' disabled' : '')}>
@@ -73,6 +74,7 @@ const Option = ({ children, playerOpt, machineOpt, setPlayerOpt, value, image, i
 				className="image"
 				src={image}
 				alt={imageAlt}
+				ref={imgRef}
 			/>
 			<input
 				type="radio"
@@ -88,22 +90,18 @@ const Option = ({ children, playerOpt, machineOpt, setPlayerOpt, value, image, i
 
 			{shouldShowRobot ? (
 			(() => {
-				let xPos = "";
-				console.log(machineOpt);
-				if (machineOpt === "rock") {
-					xPos = "840px";
-				} else if (machineOpt === "paper") {
-					xPos = "560px";
-				} else if (machineOpt === "scissors") {
-					xPos = "280px";
-				}
+				const x = imgRef.current.offsetLeft + 40;
+				const y = imgRef.current.offsetTop + 20;
+				let xPos = `${x}px`;
+				let yPos = `${y}px`;
 				return (
 				<RobotImg
 					className="robot"
 					src={robot}
 					alt="Computer icon"
 					style={{
-						right: xPos,
+						left: xPos,
+						top: yPos
 					}}
 				/>
 				);
